@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "lokalise.i18n-ally",
+    "esbenp.prettier-vscode",
+    "sibiraj-s.vscode-scss-formatter",
+    "vue.volar",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "start": "nuxt dev --open",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "pnpm": "pnpm install"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.9",
+    "@nuxtjs/device": "^3.1.1",
+    "@pinia/nuxt": "^0.5.1",
+    "@types/node": "^20.12.12",
+    "@types/qrcode": "^1.5.5",
+    "@types/qs": "^6.9.15",
+    "axios": "^1.6.8",
+    "element-plus": "^2.7.3",
+    "nuxt": "^3.11.2",
+    "sass": "^1.77.1"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.4.1",
+    "autoprefixer": "^10.4.13",
+    "buffer": "^6.0.3",
+    "qrcode": "^1.5.4",
+    "qs": "^6.11.0"
+  }
+}

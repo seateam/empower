@@ -1,0 +1,136 @@
+:root {
+  --wui-color-modal-bg: #333 !important;
+  tc-root {
+    .go652107302.go4218612181 {
+      background: linear-gradient(54deg, #50eca4 0%, #5fff76 100%);
+      svg {
+        display: none;
+      }
+    }
+    .go157313249.go652107302.go4218612181 {
+      border: 1px solid #5fff76;
+      background: #31363d;
+      position: relative;
+      padding-left: 30px;
+    }
+    .go157313249.go652107302.go4218612181::before {
+      content: url('/img/task-wallet.svg');
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      z-index: 9999;
+    }
+    .go1487791704 {
+      color: #020202;
+    }
+    .go1140934594 {
+      color: #68fe60;
+    }
+    .go1522830083 {
+      width: 200px;
+    }
+  }
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  background-color: #020202;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+#playerTot {
+  width: 100%;
+}
+body {
+  margin: 0;
+  font-family: Poppins;
+  overflow-x: hidden;
+  user-select: none;
+  .linear-button {
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    padding: 6px 20px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: radial-gradient(133.19% 167.98% at 74.04% 140.41%, #faa 0%, #640aff 100%);
+
+    &:hover {
+      box-shadow: 0px 2px 19.1px 0px #640aff;
+      opacity: 0.9;
+    }
+  }
+
+  .flex-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-items-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-inline-between {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    src: url('~/assets/font/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: url('~/assets/font/Poppins-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+a {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+
+img {
+  object-fit: contain;
+}
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+#app {
+  position: relative;
+  min-height: 100%;
+  > .page {
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

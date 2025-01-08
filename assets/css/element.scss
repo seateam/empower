@@ -1,0 +1,359 @@
+body {
+  --el-color-primary: #fff;
+  --el-input-text-color: #fff;
+  --el-border-radius-base: 16px;
+  --el-font-family: 'Poppins-Bold';
+  .el-select,
+  .el-carousel {
+    -webkit-tap-highlight-color: transparent;
+  }
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+    // -webkit-user-select: none;
+    // user-select: none;
+    outline: none;
+  }
+  .el-button {
+    font-family: 'Poppins-Bold';
+    font-size: 14px;
+    color: #000;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #44e7c1 9.26%, #3cffa3 52.43%, #a6f9af 84.93%, #fff 105.19%);
+    border: none;
+  }
+  .el-carousel__button {
+    border-radius: 3px;
+  }
+  .el-carousel__arrow {
+    display: none;
+  }
+  // .el-message--success .el-message__content {
+  //   color: red;
+  // }
+  .el-button:hover {
+    color: rgba(2, 2, 2, 1);
+  }
+  #archloot-withdraw.page {
+    .el-input__inner[type='number'] {
+      -moz-appearance: textfield; /* 去除 Firefox 的默认样式 */
+      -webkit-appearance: none; /* 去除 Chrome 和 Safari 的默认样式 */
+      appearance: none;
+      border: none; /* 去除边框 */
+    }
+
+    /* 兼容各个浏览器去掉 number input 的上下箭头 */
+    .el-input__inner[type='number']::-webkit-outer-spin-button,
+    .el-input__inner[type='number']::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .el-input__inner[type='number']::-moz-inner-spin-button {
+      -moz-appearance: none;
+      margin: 0;
+    }
+    .el-input__inner[type='number'] {
+      font-size: 36px;
+      height: 42px;
+    }
+    .el-input__wrapper {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    .el-input__wrapper.is-focus {
+      box-shadow: none;
+    }
+    .el-form-item__error {
+      margin-left: 8px;
+    }
+  }
+
+  .connected-box {
+    .el-select__placeholder {
+      color: #12aaff;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Poppins-Bold';
+    }
+  }
+
+  // .el-select__wrapper,
+  // .el-input__wrapper {
+  //   height: 48px;
+  //   padding: 0 28px;
+  // }
+  .pay-selector {
+    border-radius: 12px;
+    .el-select__wrapper {
+      width: 100%;
+      border: transparent;
+      box-shadow: none;
+      border-radius: 12px;
+      padding: 16px;
+      outline: none;
+    }
+    .el-select__selected-item {
+      font-size: 14px;
+      font-weight: 700;
+      font-family: 'Montserrat-Bold';
+      margin-left: 20px;
+    }
+    .el-icon {
+      font-size: 18px;
+      color: white;
+    }
+  }
+  .el-input__inner {
+    font-size: 16px;
+    color: #fff;
+    font-family: Poppins;
+  }
+  .el-popper.is-pure {
+    border-radius: 16px;
+    background: #4d4d4d;
+    outline: none;
+    border: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 12px 20px 0px rgba(0, 0, 0, 0.35);
+  }
+  .el-select-dropdown {
+    padding: 8px;
+  }
+  .el-select-dropdown__item {
+    margin: 5px 0;
+    padding: 0 20px;
+    &:hover {
+      border-radius: 12px;
+    }
+    &.is-selected {
+      border-radius: 12px;
+      background: #333;
+      font-weight: 400;
+    }
+  }
+  .el-select-dropdown__item.is-hovering {
+    border-radius: 12px;
+  }
+
+  .el-popper.is-light .el-popper__arrow::before {
+    display: none;
+    background: transparent;
+    border: transparent;
+  }
+  .el-checkbox__inner {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: #1fffc9;
+    border-color: transparent;
+  }
+  .el-checkbox__inner::after {
+    border: 3px solid transparent;
+    width: 5px;
+    height: 10px;
+    border-top: 0;
+    border-left: 0;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner::after {
+    border-color: #333;
+  }
+  .mobileDialog {
+    width: 88% !important;
+    .el-dialog__header {
+      .text {
+        font-size: 14px !important;
+      }
+    }
+    .btn-box {
+      .wallet,
+      .okx,
+      .metamask {
+        font-size: 12px !important;
+        text-align: center;
+        img {
+          width: 71px !important;
+        }
+      }
+    }
+  }
+  #archloot-aof-task {
+    .el-dialog {
+      // padding: 57px 30px 68px 27px;
+      width: 100%;
+      border-radius: 16px;
+      margin: 0;
+      // background: transparent;
+      color: #fffeff;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(8, 196, 226, 0) 100%);
+      // .el-dialog__header,
+      // .el-dialog__body {
+      //   padding: 0;
+      // }
+    }
+    .airdrop-dialog {
+      .el-dialog {
+        background: rgb(51, 51, 51);
+        border-radius: 0;
+      }
+    }
+  }
+}
+.limit-modal,
+.withdrawTip-modal {
+  .el-overlay-dialog {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    // background: red;
+  }
+  .el-dialog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 32px 25px 32px;
+    max-height: 300px;
+    border-radius: 30px;
+    background: #272a2d !important;
+    transition: all 0.2s ease-out;
+    pointer-events: auto;
+  }
+  .el-dialog__header {
+    width: 100%;
+    position: relative;
+    padding: 0 0 10px;
+    .point-logo {
+      position: absolute;
+      right: calc(50% - 43px);
+      top: -103px;
+      width: 86px;
+      height: auto;
+    }
+    .close {
+      position: absolute;
+      right: -10px;
+      top: -30px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+  .text-content {
+    text-align: center;
+    .text {
+      font-family: 'Poppins-Bold';
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 20px;
+    }
+    .get-btn {
+      width: 160px;
+      height: 36px;
+    }
+  }
+  .el-dialog__footer {
+    padding: 0;
+  }
+}
+.withdrawTip-modal {
+  .el-dialog {
+    padding: 35px 32px 25px 32px;
+    border-radius: 20px;
+    .close {
+      right: -15px;
+      top: -20px;
+    }
+  }
+}
+.create-modal {
+  .el-overlay-dialog {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .el-dialog__body {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .el-dialog {
+    width: 100%;
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 10px 25px 10px;
+    min-height: 350px;
+    background: #000712 !important;
+    // background: red !important;
+    transition: all 0.2s ease-out;
+    pointer-events: auto;
+  }
+  .el-dialog__header {
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+  .el-input {
+    border-radius: 0;
+    .el-input__wrapper {
+      border-radius: 2px;
+      height: 38px;
+    }
+    .el-input__wrapper.is-focus {
+      outline: none;
+    }
+    .el-input__inner {
+      font-size: 12px;
+    }
+  }
+  .login-form {
+    margin-top: 20px;
+  }
+  .el-form-item__label {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 6px;
+  }
+  .register-btn {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 2px;
+    height: 30px;
+    background: linear-gradient(186deg, #ffcc6e, #e6aa3a);
+  }
+  .vcode .el-form-item__content {
+    flex-wrap: nowrap;
+    .el-input__wrapper {
+      // border-top-right-radius: 0 !important;
+      // border-bottom-right-radius: 0 !important;
+      // border-right: none;
+    }
+    .send-code {
+      width: 160px;
+      height: 38px;
+      padding: 0 14px;
+      margin: 0;
+      color: #ffc863;
+      border-radius: 0;
+      // border-top-left-radius: 0px;
+      // border-bottom-left-radius: 0px;
+      white-space: nowrap;
+      text-align: center;
+      background: transparent;
+      border: 1px solid #ffd68a;
+    }
+  }
+}
