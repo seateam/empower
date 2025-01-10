@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <!-- <arc-splash /> -->
+    <arc-head />
     <nuxt-page class="page" />
-    <arc-footer />
+
   </div>
 </template>
 <script setup lang="ts"></script>

@@ -1,38 +1,5 @@
 :root {
-  --wui-color-modal-bg: #333 !important;
-  tc-root {
-    .go652107302.go4218612181 {
-      background: linear-gradient(54deg, #50eca4 0%, #5fff76 100%);
-      svg {
-        display: none;
-      }
-    }
-    .go157313249.go652107302.go4218612181 {
-      border: 1px solid #5fff76;
-      background: #31363d;
-      position: relative;
-      padding-left: 30px;
-    }
-    .go157313249.go652107302.go4218612181::before {
-      content: url('/img/task-wallet.svg');
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      z-index: 9999;
-    }
-    .go1487791704 {
-      color: #020202;
-    }
-    .go1140934594 {
-      color: #68fe60;
-    }
-    .go1522830083 {
-      width: 200px;
-    }
-  }
+  
 }
 *,
 ::after,
@@ -40,7 +7,7 @@
   box-sizing: border-box;
 }
 html {
-  background-color: #020202;
+  background-color: white;
   scrollbar-width: none;
   overflow-x: hidden;
 }
@@ -48,6 +15,7 @@ html {
   width: 100%;
 }
 body {
+  color: #333333;
   margin: 0;
   font-family: Poppins;
   overflow-x: hidden;
@@ -106,11 +74,11 @@ body {
 
 a {
   cursor: pointer;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 a:hover {
-  color: #ffffff;
+  color: orange;
 }
 
 img {
@@ -127,10 +95,6 @@ body,
   position: relative;
   min-height: 100%;
   > .page {
-    // display: flex;
-    // align-items: center;
-    // flex-direction: column;
     margin: 0 auto;
-    padding: 20px;
   }
 }
