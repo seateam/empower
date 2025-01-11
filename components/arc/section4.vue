@@ -9,12 +9,12 @@
         <p>为所有客户提供采购媒体资源服务</p>
       </div>
       <div class="box-container">
-        <img src="/demo_files/ywicon1.png" alt="">
+        <img src="/demo_files/ywicon2.png" alt="">
         <h4>定制化数字营销</h4>
         <p>为客户提供定制化深度服务</p>
       </div>
       <div class="box-container">
-        <img src="/demo_files/ywicon1.png" alt="">
+        <img src="/demo_files/ywicon3.png" alt="">
         <h4>基于SaaS的数字营销</h4>
         <p>通过Adorado平台为客户提供基于SaaS的数字营销服务</p>
       </div>
@@ -48,16 +48,24 @@
     .box {
     width: 100%;
     height: 291px;
-    background-color: aquamarine;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-
+    
     .box-container {
       width: 384px;
       height: 227px;
-      background-color: yellow;
-
+      padding: 30px 20px;
+      gap:20px;
+      h4{
+      margin: 0px;
+      }
+      p{
+        margin: 0px;
+      }
+      img{
+        margin-bottom: 15px;
+      }
     }
   }
   }
