@@ -3,8 +3,30 @@
     <div class="contact-background">
       <img src="/demo_files/contact1.jpg" alt="" />
     </div>
-    <div class="contact-box"></div>
+    <div class="contact-box">
+      <div class="contact-box-title">
+        <h4>联系我们</h4>
+        <div class="title-line"></div>
+      </div>
+      <div class="contact-information">
+        <div class="contact-information-left">
+          <div class="c-item">地址：北京市朝阳区慈云寺桥住邦2000商务总部1号楼B座</div>
+          <div class="c-item">电话：0086-400-176-0388</div>
+          <div class="c-item">网址：<a href="www.empowerwin.com">www.empowerwin.com</a></div>
+          <div>
+            <img src="/demo_files/ewm.png" alt="" />
+          </div>
+        </div>
+        <div class="contact-information-right">
+          <img src="/demo_files/contact2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <arc-footer/>
+    <arc-footer/>
+
   </div>
+
 </template>
 
 <script setup lang="ts"></script>
@@ -18,9 +40,68 @@
   .contact-box {
     width: 1200px;
     height: 550px;
-    background-color: green;
-    margin:0 auto;
- 
+    /* background-color: green; */
+    margin: 54px auto;
+
+    .contact-box-title {
+      width: 112px;
+      height: 54px;
+      margin: 0 auto;
+
+      h4 {
+        font-size: 28px;
+        margin: 0;
+        color: #045ea5;
+        font-weight: normal;
+        line-height: 1.1;
+      }
+
+      .title-line {
+        margin-top: 15px;
+        height: 5px;
+        width: 30px;
+        background-color: #045ea5;
+        margin: 0 auto;
+        margin-top: 15px;
+      }
+    }
+
+    .contact-information {
+      height: 425px;
+      width: 1200px;
+      margin: 45px auto;
+
+      .contact-information-left {
+        width: 524px;
+        height: 425px;
+        background-color: #e4e4e4;
+        float: left;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px !important;
+
+        .c-item{
+          margin-bottom: 15px;
+          line-height: 24px;
+        }
+
+        img{
+          width: 140px;
+          height: 140px;
+        }
+
+      }
+      .contact-information-right {
+        float: right;
+        img {
+          width: 676px;
+          height: 425px;
+          border-radius: 0 10px 10px 0;
+        }
+      }
+    }
   }
 }
 </style>
