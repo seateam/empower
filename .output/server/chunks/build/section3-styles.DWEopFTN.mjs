@@ -1,6 +1,0 @@
-const section3_vue_vue_type_style_index_0_scoped_8765276e_lang = "#company[data-v-8765276e]{background-color:#fff;padding-top:50px;width:100%}#company .container[data-v-8765276e]{margin:0 auto;max-width:1200px;padding:144px 0;padding:20px;text-align:center;width:100%}#company .title[data-v-8765276e]{font-size:32px;margin-bottom:50px}#company .grid[data-v-8765276e]{display:grid;gap:20px;grid-template-columns:repeat(4,1fr);margin:50px 0}#company .grid-item[data-v-8765276e]{align-items:center;display:flex;flex-direction:column}#company .media-logo[data-v-8765276e]{height:48px;margin-bottom:45px;width:300px}#company .footer[data-v-8765276e]{display:flex;justify-content:space-around}#company .number[data-v-8765276e]{color:#045ea5;font-size:48px;font-weight:700}#company .text[data-v-8765276e]{display:inline-flex;gap:20px;line-height:1}#company .text .add[data-v-8765276e]{color:#045ea5;font-family:Helvetica,sans-serif;font-size:20px}#company .text span[data-v-8765276e]{font-size:16px;vertical-align:top}";
-
-const section3Styles_DWEopFTN = [section3_vue_vue_type_style_index_0_scoped_8765276e_lang];
-
-export { section3Styles_DWEopFTN as default };
-//# sourceMappingURL=section3-styles.DWEopFTN.mjs.map
