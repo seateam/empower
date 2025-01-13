@@ -8,6 +8,7 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 const userStore = useUserStore()
+
 onMounted(() => {
   let language = localStorage.getItem('language') || navigator.language.substring(0, 2)
   if (language === 'cn') {
