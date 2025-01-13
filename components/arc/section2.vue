@@ -26,7 +26,7 @@
   background-color: white;
   .about-us-box {
     margin: 0 auto;
-    padding: 144px 0;
+    padding-top: 144px;
     max-width: 1200px;
     width: 100%;
     display: flex;

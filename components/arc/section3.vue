@@ -4,7 +4,11 @@
       <h2 class="title">集团覆盖媒体资源</h2>
       <div class="grid">
         <div v-for="n in 8" class="grid-item">
-          <img :src="`/img/files/dls${n}.jpg`" alt="img" class="media-logo" />
+          <img
+            :src="`/img/files/dls${n === 8 ? n + '.png' : n + '.jpg'}`"
+            alt="img"
+            class="media-logo"
+          />
         </div>
       </div>
       <div class="footer">
@@ -26,6 +30,7 @@
 #company {
   width: 100%;
   background-color: white;
+  padding-top: 50px;
   .container {
     margin: 0 auto;
     padding: 144px 0;
@@ -47,7 +52,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-bottom: 20px;
+    margin: 50px 0;
   }
 
   .grid-item {
