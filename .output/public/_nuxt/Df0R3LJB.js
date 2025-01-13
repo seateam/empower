@@ -1,0 +1,1 @@
+import{_ as t,o,c as a,a as e}from"./DjUBrSXj.js";const c={},n={id:"em-home"};function _(d,s){return o(),a("div",n,s[0]||(s[0]=[e("div",{class:"em-code animate-in"},[e("h1",null,"力盟科技集团"),e("div",{class:"subtitle"},"中国专业的跨境数字营销集团"),e("div",{class:"subtitle"},"足不出户|营销全球")],-1)]))}const r=t(c,[["render",_],["__scopeId","data-v-e34a8164"]]);export{r as default};
