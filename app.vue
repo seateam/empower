@@ -2,7 +2,7 @@
   <div id="app">
     <arc-head />
     <nuxt-page class="page" />
-
+    <arc-footer />
   </div>
 </template>
 <script setup lang="ts"></script>

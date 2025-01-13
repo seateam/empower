@@ -1,7 +1,7 @@
 <template>
   <div id="em-index">
     <div class="contact-background">
-      <img src="/demo_files/contact1.jpg" alt="" />
+      <img src="/img/files/contact1.jpg" alt="" />
     </div>
     <div class="contact-box">
       <div class="contact-box-title">
@@ -14,19 +14,15 @@
           <div class="c-item">电话：0086-400-176-0388</div>
           <div class="c-item">网址：<a href="www.empowerwin.com">www.empowerwin.com</a></div>
           <div>
-            <img src="/demo_files/ewm.png" alt="" />
+            <img src="/img/files/ewm.png" alt="" />
           </div>
         </div>
         <div class="contact-information-right">
-          <img src="/demo_files/contact2.jpg" alt="" />
+          <img src="/img/files/contact2.jpg" alt="" />
         </div>
       </div>
     </div>
-    <arc-footer/>
-    <arc-footer/>
-
   </div>
-
 </template>
 
 <script setup lang="ts"></script>
@@ -82,16 +78,15 @@
         justify-content: center;
         padding: 50px !important;
 
-        .c-item{
+        .c-item {
           margin-bottom: 15px;
           line-height: 24px;
         }
 
-        img{
+        img {
           width: 140px;
           height: 140px;
         }
-
       }
       .contact-information-right {
         float: right;

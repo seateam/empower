@@ -1,10 +1,10 @@
 <template>
-  <div id="em-section3">
+  <div id="company">
     <div class="container">
       <h2 class="title">集团覆盖媒体资源</h2>
       <div class="grid">
         <div v-for="n in 8" class="grid-item">
-          <img :src="`/demo_files/dls${n}.jpg`" alt="img" class="media-logo" />
+          <img :src="`/img/files/dls${n}.jpg`" alt="img" class="media-logo" />
         </div>
       </div>
       <div class="footer">
@@ -13,9 +13,7 @@
           <span>家全球顶级媒体发布平台</span>
         </div>
         <div class="text">
-          <div class="number"
-            >50<span class="add">+</span>
-          </div>
+          <div class="number">50<span class="add">+</span></div>
           <span>家专注于特定垂直领域的全球/区域媒体</span>
         </div>
       </div>
@@ -25,14 +23,13 @@
 
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
-#em-section3 {
+#company {
   width: 100%;
   background-color: white;
   .container {
     margin: 0 auto;
     padding: 144px 0;
     max-width: 1200px;
-    width: 100%;
     width: 100%;
   }
 
@@ -57,20 +54,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
   }
 
   .media-logo {
     margin-bottom: 45px;
-    width:300px ;
+    width: 300px;
     height: 48px;
-    
   }
 
   .footer {
     display: flex;
     justify-content: space-around;
-
   }
 
   .number {
@@ -82,12 +76,12 @@
     display: inline-flex;
     gap: 20px;
     line-height: 1;
-   .add{
+    .add {
       color: #045ea5;
       font-size: 20px;
       font-family: Helvetica, sans-serif;
     }
-   span {
+    span {
       vertical-align: top;
       font-size: 16px;
     }

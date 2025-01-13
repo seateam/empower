@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.4.1",
+    "@vueuse/core": "^12.4.0",
     "autoprefixer": "^10.4.13",
     "buffer": "^6.0.3",
     "qrcode": "^1.5.4",
