@@ -2,22 +2,24 @@
   <div id="em-footer">
     <div class="foot">
       <div class="ftLeft">
-        <p>地址：北京市朝阳区慈云寺桥住邦2000商务总部1号楼B座</p>
-        <p>电话：0086-400-176-0388</p>
+        <p>{{ $t('footer-address') }}</p>
+        <p>{{ $t('footer-phone') }}</p>
         <p>
-          <a href="http://beian.miit.gov.cn/">粤ICP备19032438号</a> Copyright ©2013-2023 Powerwin
-          All rights reserved.
+          <a href="http://beian.miit.gov.cn/">{{ $t('footer-icp') }}</a> 
+          {{ $t('footer-all') }}
         </p>
       </div>
       <div class="ftRight">
         <img src="/img/files/ewm.png" />
-        <span>力盟科技集团</span>
+        <span>{{ $t('company-name') }}</span>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t: $t } = useI18n()
+</script>
 <style lang="scss" scoped>
 #em-footer {
   margin-top: 120px;

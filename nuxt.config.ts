@@ -32,23 +32,29 @@ export default defineNuxtConfig({
   },
 
   // modules
-  modules: ['@element-plus/nuxt', '@pinia/nuxt', '@nuxtjs/color-mode', '@nuxtjs/device'],
+  modules: [
+    '@element-plus/nuxt',
+    '@pinia/nuxt',
+    '@nuxtjs/i18n',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/device',
+  ],
 
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
     classSuffix: '',
   },
-
+  i18n: {
+    vueI18n: './nuxt-i18n.ts',
+  },
   // https://content.nuxtjs.org/examples/mdc/nested-components
   components: [{ path: '~/components', global: true }],
 
   elementPlus: { importStyle: 'scss' },
 
-  plugins: [{ src: '~/plugins/vConsole.js', mode: 'client' }],
-
   devServer: {
     host: 'localhost',
-    port: 6000,
+    port: 3000,
   },
 })

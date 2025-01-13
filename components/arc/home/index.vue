@@ -1,14 +1,16 @@
 <template>
   <div id="em-home">
     <div class="em-code animate-in">
-      <h1>力盟科技集团</h1>
-      <div class="subtitle">中国专业的跨境数字营销集团</div>
-      <div class="subtitle">足不出户|营销全球</div>
+      <h1>{{ $t('company-name') }}</h1>
+      <div class="subtitle">{{ $t('home-title') }}</div>
+      <div class="subtitle">{{ $t('home-subtitle1') + '|' + $t('home-subtitle2') }}</div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t: $t } = useI18n()
+</script>
 
 <style lang="scss" scoped>
 #em-home {

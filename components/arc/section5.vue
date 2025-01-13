@@ -29,6 +29,16 @@
             }"
             @click="goToSlide(index)"
           >
+            <img
+              :src="
+                currentIndex === index
+                  ? item.tabImgActive
+                  : [0, 2, 4].includes(currentIndex)
+                  ? item.tabImg
+                  : item.tabImgMid
+              "
+              class="image"
+            />
             <span class="tab-title">{{ item.title }}</span>
           </div>
         </div>
@@ -40,42 +50,50 @@
 <script setup lang="ts">
 import type { CarouselInstance } from 'element-plus'
 const currentIndex = ref(0)
+const { t: $t } = useI18n()
 const carousel = ref<CarouselInstance | null>(null)
-interface ListItem {
-  title: string
-  subtitle: string
-  eventImg: string
-}
-const list: ListItem[] = [
+const list = computed(() => [
   {
-    title: 'GatherOne',
-    subtitle: '精细化效果运营顶级代理商',
+    title: $t('section5-title-list1'),
+    subtitle: $t('section5-subtitle-list1'),
     eventImg: '/img/banner/1.png',
+    tabImg: '/img/banner/2-common.png',
+    tabImgActive: '/img/banner/2-active.png',
+    tabImgMid: '/img/banner/2-mid.png',
   },
   {
-    title: '专注出海\n与市场需求洞察',
-    subtitle:
-      '我们专注于游戏与应用类产品出海，深入了解行业特点和市场需求，确保我们的服务能够精准匹配目标市场',
+    title: $t('section5-title-list2'),
+    subtitle: $t('section5-subtitle-list2'),
     eventImg: '/img/banner/2.png',
+    tabImg: '/img/banner/2-common.png',
+    tabImgActive: '/img/banner/2-active.png',
+    tabImgMid: '/img/banner/2-mid.png',
   },
   {
-    title: '智能化技术\n与数据分析',
-    subtitle: '我们注重智能化技术的研发与应用，通过先进的数据分析工具，提升营销效果，实现精准营销',
+    title: $t('section5-title-list3'),
+    subtitle: $t('section5-subtitle-list3'),
     eventImg: '/img/banner/3.png',
+    tabImg: '/img/banner/3-common.png',
+    tabImgActive: '/img/banner/3-active.png',
+    tabImgMid: '/img/banner/3-mid.png',
   },
   {
-    title: '资深国际营销团队',
-    subtitle:
-      '我们拥有一支资深的海外市场营销团队，凭借丰富的国际市场营销经验，能够为客户提供全方位的市场分析和营销支持',
+    title: $t('section5-title-list4'),
+    subtitle: $t('section5-subtitle-list4'),
     eventImg: '/img/banner/4.png',
+    tabImg: '/img/banner/4-common.png',
+    tabImgActive: '/img/banner/4-active.png',
+    tabImgMid: '/img/banner/4-mid.png',
   },
   {
-    title: '全球营销数据支持与SAAS工具',
-    subtitle:
-      '我们提供跨平台、跨地区的营销数据支持，帮助客户实现全球市场的精准定位。同时，我们提供SaaS营销工具，帮助客户提升营销效率和管理水平，使其在全球市场中更具竞争力',
+    title: $t('section5-title-list5'),
+    subtitle: $t('section5-subtitle-list5'),
     eventImg: '/img/banner/5.png',
+    tabImg: '/img/banner/5-common.png',
+    tabImgActive: '/img/banner/5-active.png',
+    tabImgMid: '/img/banner/5-mid.png',
   },
-]
+])
 const handleCarouselChange = (index: number) => {
   currentIndex.value = index
 }
@@ -123,21 +141,24 @@ const goToSlide = (index: number) => {
       position: relative;
       display: flex;
       justify-content: center;
-      margin-top: -200px;
+      margin-top: -210px;
       font-size: 20px;
       color: #1651b5;
       text-align: center;
       .tab {
         transition: all 0.3s;
         width: 240px;
-        height: 180px;
+        height: 190px;
         padding: 30px 20px;
         box-sizing: border-box;
         border: 1px solid hsla(0, 0%, 100%, 0.1);
         cursor: pointer;
         text-align: center;
         white-space: pre-line;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
         &.active {
           background: hsla(0, 0%, 66%, 0.2);
         }
@@ -145,6 +166,9 @@ const goToSlide = (index: number) => {
         .tab-title {
           font-size: 16px;
           font-weight: bold;
+        }
+        img {
+          width: 56px;
         }
       }
     }

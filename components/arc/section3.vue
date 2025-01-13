@@ -1,7 +1,7 @@
 <template>
   <div id="company">
     <div class="container">
-      <h2 class="title">集团覆盖媒体资源</h2>
+      <h2 class="title">{{ $t('section3-title') }}</h2>
       <div class="grid">
         <div v-for="n in 8" class="grid-item">
           <img
@@ -14,18 +14,20 @@
       <div class="footer">
         <div class="text">
           <div class="number">19</div>
-          <span>家全球顶级媒体发布平台</span>
+          <span>{{ $t('section3-text1') }}</span>
         </div>
         <div class="text">
           <div class="number">50<span class="add">+</span></div>
-          <span>家专注于特定垂直领域的全球/区域媒体</span>
+          <span>{{ $t('section3-text2') }}</span>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t: $t } = useI18n()
+</script>
 <style lang="scss" scoped>
 #company {
   width: 100%;

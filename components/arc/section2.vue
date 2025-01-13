@@ -4,13 +4,15 @@
       <img src="/img/files/aboutus.jpg" alt="" />
       <div class="about-us-text">
         <div class="about-us-title">
-          <h3>力盟科技集团</h3>
-          <p class="Subtitle">中国专业的跨境数字营销集团</p>
+          <h3>{{ $t('company-name') }}</h3>
+          <p class="Subtitle">{{ $t('home-title') }}</p>
           <p>
-            力盟科技集团媒体覆盖了Facebook、Instagram、Messenger、Google、Twitter、TikTok、YouTube、Snapchat、Pinterest等全球主流媒体资源，通过数字媒体聚合广告平台Adorado和智能化建站平台Powershopy，结合大数据和优化算法，为出海广告主提供多元化、全链路跨境数字营销和网店解决方案。
+            {{ $t('section2-title') }}
           </p>
           <p>
-            标准化数字营销解决方案<br />定制化数字营销解决方案<br />基于SaaS的数字化营销解决方案<br />一站式跨境网店SaaS解决方案
+            {{ $t('section2-text1') }}<br />
+            {{ $t('section2-text2') }}<br />
+            {{ $t('section2-text3') }}
           </p>
         </div>
         <div class="about-us-p"></div>
@@ -19,7 +21,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t: $t } = useI18n()
+</script>
 <style lang="scss" scoped>
 #about-us {
   width: 100%;

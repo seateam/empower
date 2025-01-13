@@ -1,22 +1,22 @@
 <template>
-  <div id="contact">
+  <div id="teams">
     <div class="container">
-      <h2 class="title">{{ $t('section4-title') }}</h2>
+      <h2 class="title">{{ $t('section6-title') }}</h2>
       <div class="box">
         <div class="box-container">
-          <img src="/img/files/ywicon1.png" alt="" />
-          <h4>{{ $t('section4-text1') }}</h4>
-          <p>{{ $t('section4-text2') }}</p>
+          <img src="/img/banner/first.png" alt="" />
+          <h4>{{ $t('section6-text1') }}</h4>
+          <p>5,000 +</p>
         </div>
         <div class="box-container">
-          <img src="/img/files/ywicon2.png" alt="" />
-          <h4>{{ $t('section4-text3') }}</h4>
-          <p>{{ $t('section4-text4') }}</p>
+          <img src="/img/banner/second.png" alt="" />
+          <h4>{{ $t('section6-text2') }}</h4>
+          <p>10,000 +</p>
         </div>
         <div class="box-container">
-          <img src="/img/files/ywicon3.png" alt="" />
-          <h4>{{ $t('section4-text5') }}</h4>
-          <p>{{ $t('section4-text6') }}</p>
+          <img src="/img/banner/third.png" alt="" />
+          <h4>{{ $t('section6-text3') }}</h4>
+          <p>30,000 +</p>
         </div>
       </div>
     </div>
@@ -27,9 +27,9 @@
 const { t: $t } = useI18n()
 </script>
 <style lang="scss" scoped>
-#contact {
+#teams {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   background-color: white;
 
   .container {
@@ -38,30 +38,37 @@ const { t: $t } = useI18n()
     width: 100%;
     text-align: center;
     height: 226px;
+    img {
+      width: 82px;
+      height: 82px;
+    }
 
     .title {
       width: 100%;
       font-size: 32px;
-      margin-top: 140px;
+      margin-top: 240px;
     }
     .box {
       width: 100%;
-      height: 291px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 50px;
 
       .box-container {
-        width: 384px;
-        height: 227px;
-        background: #fff;
-        padding: 40px 25px 25px;
+        width: 100%;
         text-align: center;
+        padding: 40px 25px;
         box-sizing: border-box;
-        float: left;
         box-shadow: 2px 2px 20px rgb(0 0 0 / 6%);
         h4 {
-          color: #f97310;
+          color: rgb(134, 134, 134);
+          font-size: 24px;
+        }
+        p {
+          color: rgb(22, 81, 181);
+          font-size: 48px;
+          margin: 0;
         }
       }
     }

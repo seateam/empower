@@ -5,14 +5,16 @@
     </div>
     <div class="contact-box">
       <div class="contact-box-title">
-        <h4>联系我们</h4>
+        <h4>{{ $t('contact-us') }}</h4>
         <div class="title-line"></div>
       </div>
       <div class="contact-information">
         <div class="contact-information-left">
-          <div class="c-item">地址：北京市朝阳区慈云寺桥住邦2000商务总部1号楼B座</div>
-          <div class="c-item">电话：0086-400-176-0388</div>
-          <div class="c-item">网址：<a href="www.empowerwin.com">www.empowerwin.com</a></div>
+          <div class="c-item">{{ $t('footer-address') }}</div>
+          <div class="c-item">{{ $t('footer-phone') }}</div>
+          <div class="c-item">
+            {{ $t('footer-net') }}<a href="www.empowerwin.com">www.empowerwin.com</a>
+          </div>
           <div>
             <img src="/img/files/ewm.png" alt="" />
           </div>
@@ -25,7 +27,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t: $t } = useI18n()
+</script>
 
 <style>
 #em-index {

@@ -11,28 +11,36 @@
 
       <ul>
         <li>
-          <nuxt-link to="/" :class="{ active: isActive('/') }"> 首页 </nuxt-link>
+          <nuxt-link to="/" :class="{ active: isActive('/') }"> {{ $t('home-page') }} </nuxt-link>
         </li>
         <li>
           <nuxt-link to="/#about-us" :class="{ active: isAnchorActive('#about-us') }">
-            关于我们
+            {{ $t('about-us') }}
           </nuxt-link>
         </li>
         <li>
           <nuxt-link to="/#company" :class="{ active: isAnchorActive('#company') }">
-            公司业务
+            {{ $t('company-product') }}
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact" :class="{ active: isActive('/contact') }"> 联系我们 </nuxt-link>
+          <nuxt-link to="/contact" :class="{ active: isActive('/contact') }">
+            {{ $t('contact-us') }}
+          </nuxt-link>
         </li>
       </ul>
 
       <div class="right">
         <div class="language-switch">
-          <nuxt-link to="">EN</nuxt-link>
-          <nuxt-link to="">繁</nuxt-link>
-          <nuxt-link to="">简</nuxt-link>
+          <div @click="changeLanguage(1)" :class="{ active: userStore.languageActive === 1 }">
+            EN
+          </div>
+          <div @click="changeLanguage(2)" :class="{ active: userStore.languageActive === 2 }">
+            繁
+          </div>
+          <div @click="changeLanguage(0)" :class="{ active: userStore.languageActive === 0 }">
+            简
+          </div>
         </div>
       </div>
     </div>
@@ -42,7 +50,15 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 import { useRoute } from 'vue-router'
-
+const { t: $t } = useI18n()
+const { locale } = useI18n()
+const userStore = useUserStore()
+const changeLanguage = (i: number) => {
+  userStore.languageActive = i
+  const lang = userStore.languageList[i].value
+  localStorage.setItem('language', lang)
+  locale.value = lang
+}
 const route = useRoute()
 const { y } = useWindowScroll()
 
@@ -87,6 +103,7 @@ const headerBackground = computed(
       color: #f97310;
     }
   }
+
   .em-head-box {
     height: 100%;
     display: flex;
@@ -112,10 +129,21 @@ const headerBackground = computed(
       }
     }
     .right {
-      a {
-        border-right: 1px solid #cacaca;
-        padding: 0 10px;
-        font-size: 14px;
+      .language-switch {
+        display: flex;
+        div {
+          cursor: pointer;
+          border-right: 1px solid #cacaca;
+          padding: 0 10px;
+          font-size: 14px;
+          color: white;
+          &:hover {
+            color: #f97310;
+          }
+        }
+        div.active {
+          color: #f97310;
+        }
       }
     }
   }
@@ -126,6 +154,21 @@ const headerBackground = computed(
     color: #333;
     &:hover {
       color: #f97310;
+    }
+  }
+  .em-head-box {
+    .right {
+      .language-switch {
+        div {
+          color: #333;
+          &:hover {
+            color: #f97310;
+          }
+        }
+        div.active {
+          color: #f97310;
+        }
+      }
     }
   }
 }

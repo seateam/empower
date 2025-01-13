@@ -5,7 +5,23 @@
     <arc-footer />
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { locale } = useI18n()
+const userStore = useUserStore()
+onMounted(() => {
+  // language
+  let language = localStorage.getItem('language') || navigator.language.substring(0, 2)
+  if (language === 'cn') {
+    locale.value = language
+  } else if (language === 'zh') {
+    locale.value = language
+  } else {
+    locale.value = 'en'
+  }
+  userStore.languageActive = userStore.languageList.findIndex((e) => e.value === language)
+  localStorage.setItem('language', language)
+})
+</script>
 <style lang="scss">
 // global
 @use 'element-plus/theme-chalk/dark/css-vars.css' as *;

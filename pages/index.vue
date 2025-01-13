@@ -5,6 +5,7 @@
     <arc-section3 />
     <arc-section4 />
     <arc-section5 />
+    <arc-section6 />
   </div>
 </template>
 <script setup lang="ts"></script>
