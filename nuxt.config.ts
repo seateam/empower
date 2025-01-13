@@ -10,20 +10,15 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'MOKOKOBOT',
+      title: 'Powerwin',
       meta: [
         {
           name: 'description',
-          content: 'MOKOKOBOT',
+          content: 'Powerwin',
         },
       ],
       link: [{ rel: 'icon', href: '/logo.svg' }],
       // https://bytedance.feishu.cn/wiki/wikcnJZV45hM71QgI60iwkzvXob
-
-      script: [
-        { defer: true, src: 'https://telegram.org/js/telegram-web-app.js' },
-        { type: 'text/javascript', src: 'https://unpkg.com/vconsole@latest/dist/vconsole.min.js' },
-      ],
     },
   },
 

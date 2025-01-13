@@ -9,7 +9,6 @@
 const { locale } = useI18n()
 const userStore = useUserStore()
 onMounted(() => {
-  // language
   let language = localStorage.getItem('language') || navigator.language.substring(0, 2)
   if (language === 'cn') {
     locale.value = language

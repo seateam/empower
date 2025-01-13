@@ -44,9 +44,10 @@ const { t: $t } = useI18n()
     margin: 54px auto;
 
     .contact-box-title {
-      width: 112px;
+      width: 190px;
       height: 54px;
       margin: 0 auto;
+      text-align: center;
 
       h4 {
         font-size: 28px;

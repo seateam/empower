@@ -8,5 +8,8 @@
     "inited",
     "nuxt",
     "pinia"
+  ],
+  "i18n-ally.localesPaths": [
+    "lang"
   ]
 }
