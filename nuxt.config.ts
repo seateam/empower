@@ -30,9 +30,9 @@ export default defineNuxtConfig({
   modules: [
     '@element-plus/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
+    '@nuxtjs/i18n',
   ],
 
   colorMode: {

@@ -24,6 +24,7 @@ const { t: $t } = useI18n()
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
   .em-code {
     display: flex;
