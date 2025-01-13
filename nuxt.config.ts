@@ -17,7 +17,7 @@ export default defineNuxtConfig({
           content: 'Powerwin',
         },
       ],
-      link: [{ rel: 'icon', href: '/logo.svg' }],
+      link: [{ rel: 'icon', href: '/logo.png' }],
       // https://bytedance.feishu.cn/wiki/wikcnJZV45hM71QgI60iwkzvXob
     },
   },
