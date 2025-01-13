@@ -2,19 +2,24 @@
   <div id="em-home">
     <div class="em-code animate-in">
       <h1>{{ $t('company-name') }}</h1>
-      <div class="subtitle">{{ $t('home-title') }}</div>
-      <div class="subtitle">{{ $t('home-subtitle1') + '|' + $t('home-subtitle2') }}</div>
+      <div class="subtitle" :class="{ en: locale === 'en' }">{{ $t('home-title') }}</div>
+      <div class="subtitle" :class="{ en: locale === 'en' }">
+        {{ $t('home-subtitle1') + '|' + $t('home-subtitle2') }}
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const { t: $t } = useI18n()
+const { locale } = useI18n()
 </script>
 
 <style lang="scss" scoped>
 #em-home {
-  height: 962px;
+  // height: 962px;
+  width: 100vw;
+  height: 100vh;
   background: url('/img/files/banner_bg.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -41,6 +46,9 @@ const { t: $t } = useI18n()
       font-size: 50px;
       font-weight: 500;
       margin-bottom: 24px;
+    }
+    .en {
+      font-size: 30px;
     }
   }
 }
