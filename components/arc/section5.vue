@@ -15,7 +15,7 @@
         </el-carousel-item>
       </el-carousel>
       <div class="title-box" :class="`title-${currentIndex}`">
-        <h2 class="title">{{ list[currentIndex].title }}</h2>
+        <h2 class="title" :class="{ en: locale === 'en' }">{{ list[currentIndex].title }}</h2>
         <p class="subtitle" :class="{ en: locale === 'en' }">{{ list[currentIndex].subtitle }}</p>
       </div>
       <div class="tab-box">
@@ -39,7 +39,7 @@
               "
               class="image"
             />
-            <span class="tab-title">{{ item.title }}</span>
+            <span class="tab-title" :class="{ en: locale === 'en' }">{{ item.title }}</span>
           </div>
         </div>
       </div>
@@ -127,12 +127,15 @@ const goToSlide = (index: number) => {
       .title {
         font-weight: 500;
       }
+      .title.en {
+        font-size: 34px;
+      }
       .subtitle {
         font-weight: 400;
         font-size: 28px;
       }
       .subtitle.en {
-        font-size: 20px;
+        font-size: 24px;
       }
     }
     .title-0,
@@ -170,6 +173,9 @@ const goToSlide = (index: number) => {
         .tab-title {
           font-size: 16px;
           font-weight: bold;
+        }
+        .tab-title.en {
+          font-size: 14px;
         }
         img {
           width: 56px;
