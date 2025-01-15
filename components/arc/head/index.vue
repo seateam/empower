@@ -38,9 +38,9 @@
           <div @click="changeLanguage(2)" :class="{ active: userStore.languageActive === 2 }">
             繁
           </div>
-          <div @click="changeLanguage(0)" :class="{ active: userStore.languageActive === 0 }">
+          <!-- <div @click="changeLanguage(0)" :class="{ active: userStore.languageActive === 0 }">
             简
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -111,7 +111,9 @@ const headerBackground = computed(
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
-
+    img {
+      width: 120px;
+    }
     ul {
       display: flex;
       align-items: center; /* 垂直居中 */

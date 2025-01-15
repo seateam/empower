@@ -16,7 +16,7 @@
       </el-carousel>
       <div class="title-box" :class="`title-${currentIndex}`">
         <h2 class="title">{{ list[currentIndex].title }}</h2>
-        <p class="subtitle">{{ list[currentIndex].subtitle }}</p>
+        <p class="subtitle" :class="{ en: locale === 'en' }">{{ list[currentIndex].subtitle }}</p>
       </div>
       <div class="tab-box">
         <div v-for="(item, index) in list" :key="index">
@@ -49,6 +49,7 @@
 
 <script setup lang="ts">
 import type { CarouselInstance } from 'element-plus'
+const { locale } = useI18n()
 const currentIndex = ref(0)
 const { t: $t } = useI18n()
 const carousel = ref<CarouselInstance | null>(null)
@@ -129,6 +130,9 @@ const goToSlide = (index: number) => {
       .subtitle {
         font-weight: 400;
         font-size: 28px;
+      }
+      .subtitle.en {
+        font-size: 20px;
       }
     }
     .title-0,

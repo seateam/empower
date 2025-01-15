@@ -5,8 +5,10 @@
         <p>{{ $t('footer-address') }}</p>
         <p>{{ $t('footer-phone') }}</p>
         <p>
-          <a href="http://beian.miit.gov.cn/">{{ $t('footer-icp') }}</a> 
-          {{ $t('footer-all') }}
+          {{ $t('footer-email1') }}
+        </p>
+        <p>
+          {{ $t('footer-email2') }}
         </p>
       </div>
       <div class="ftRight">

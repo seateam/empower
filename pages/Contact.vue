@@ -13,7 +13,7 @@
           <div class="c-item">{{ $t('footer-address') }}</div>
           <div class="c-item">{{ $t('footer-phone') }}</div>
           <div class="c-item">
-            {{ $t('footer-net') }}<a href="www.empowerwin.com">www.empowerwin.com</a>
+            {{ $t('footer-net') }}<a href="https://heat-wave.co"> https://heat-wave.co</a>
           </div>
           <div>
             <img src="/img/files/ewm.png" alt="" />
