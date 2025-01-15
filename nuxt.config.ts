@@ -10,11 +10,11 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Powerwin',
+      title: 'HeatWave',
       meta: [
         {
           name: 'description',
-          content: 'Powerwin',
+          content: 'HeatWave',
         },
       ],
       link: [{ rel: 'icon', href: '/logo.png' }],
