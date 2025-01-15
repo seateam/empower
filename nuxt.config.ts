@@ -25,7 +25,6 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
   },
-  ssr: false,
   // modules
   modules: [
     '@element-plus/nuxt',
