@@ -4,12 +4,6 @@
       <div class="ftLeft">
         <p>{{ $t('footer-address') }}</p>
         <p>{{ $t('footer-phone') }}</p>
-        <p>
-          {{ $t('footer-email1') }}
-        </p>
-        <p>
-          {{ $t('footer-email2') }}
-        </p>
       </div>
       <div class="ftRight">
         <img src="/img/files/ewm.png" />
