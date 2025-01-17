@@ -5,11 +5,6 @@ export const useUserStore = defineStore({
       languageActive: 0,
       languageList: [
         {
-          label: '简体中文',
-          value: 'cn',
-          default: true,
-        },
-        {
           label: 'English ',
           value: 'en',
         },

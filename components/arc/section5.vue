@@ -55,7 +55,7 @@ const { t: $t } = useI18n()
 const carousel = ref<CarouselInstance | null>(null)
 const list = computed(() => [
   {
-    title: $t('section5-title-list1'),
+    title: $t('company'),
     subtitle: $t('section5-subtitle-list1'),
     eventImg: '/img/banner/1.png',
     tabImg: '/img/banner/2-common.png',

@@ -32,15 +32,12 @@
 
       <div class="right">
         <div class="language-switch">
-          <div @click="changeLanguage(1)" :class="{ active: userStore.languageActive === 1 }">
+          <div @click="changeLanguage(0)" :class="{ active: userStore.languageActive === 0 }">
             EN
           </div>
-          <div @click="changeLanguage(2)" :class="{ active: userStore.languageActive === 2 }">
+          <div @click="changeLanguage(1)" :class="{ active: userStore.languageActive === 1 }">
             繁
           </div>
-          <!-- <div @click="changeLanguage(0)" :class="{ active: userStore.languageActive === 0 }">
-            简
-          </div> -->
         </div>
       </div>
     </div>
