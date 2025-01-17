@@ -11,9 +11,7 @@ const userStore = useUserStore()
 
 onMounted(() => {
   let language = localStorage.getItem('language') || navigator.language.substring(0, 2)
-  if (language === 'cn') {
-    locale.value = language
-  } else if (language === 'zh') {
+  if (language === 'zh') {
     locale.value = language
   } else {
     locale.value = 'en'
